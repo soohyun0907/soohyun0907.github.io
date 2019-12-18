@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "SooHyun Jeon"
-  avatar           : "/assets/profile_16x16.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am junior sw developer."
   location         : "South Korea"
   email            :
