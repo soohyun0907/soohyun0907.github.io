@@ -20,7 +20,7 @@ title                    : "Carpe Diem"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "SooHyun Jeon"
-description              : "SW Developer Website"
+description              : "Junior SW Developer Website"
 url                      : "https://soohyun0907.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "SooHyun Jeon"
   avatar           : "/assets/profile.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am junior sw developer."
+  bio              : "Junior SW Developer."
   location         : "South Korea"
   email            :
   links:
@@ -118,7 +118,7 @@ author:
       # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://blog.naver.com/soohyun0907"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -127,7 +127,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/soohyun0907"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -143,7 +143,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/soohyun0907"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -222,7 +222,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
