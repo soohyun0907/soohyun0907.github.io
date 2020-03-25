@@ -6,6 +6,7 @@ categories:
   - Dummy
 tags:
   - Dummty
+layout: single
 last_modified_at: 2019-12-18T19:09:00-05:00
 ---
 This is test post.
