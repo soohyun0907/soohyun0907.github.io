@@ -5,9 +5,12 @@ excerpt: "GitHub Blog 서비스인 github.io 블로그 시작하기로 했다."
 categories:
   - Dummy
 tags:
-  - Dummty
+  - Dummy
 layout: single
-last_modified_at: 2019-12-18T19:09:00-05:00
+author_profile: true
+read_time: false
+comments: true
+related: false
 ---
 This is test post.
 My goal is 1 Day 1 Commit.
