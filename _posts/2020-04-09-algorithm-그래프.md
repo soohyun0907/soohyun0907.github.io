@@ -7,6 +7,7 @@ categories:
 tags:
  - Algorithm 
  - Graph
+ - MST
 layout: single
 ---
 # 그래프
@@ -112,7 +113,7 @@ public class Kruskal {
 		}
 		// 정점의 갯수-1번 반복하면서
 		int cnt = 0, result = 0;
-		for (int i = 0; i < V - 1; i++) {
+		for (int i = 0; i < E; i++) {
 			int a = findSet(edges[i][0]);
 			int b = findSet(edges[i][1]);
 			// 같은 팀이라면 패스
