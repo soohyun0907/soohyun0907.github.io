@@ -1,5 +1,5 @@
 ---
-title: "JDBC"
+title: "Database 개념3 - JDBC"
 excerpt: "Java Database Connectivity"
 
 categories:

@@ -1,6 +1,6 @@
 ---
-title: "Algorithm_Graph"
-excerpt: "Graph"
+title: "MST-크루스칼, 프림 알고리즘"
+excerpt: "알고리즘 개념 - MST"
 
 categories:
  - Algorithm
@@ -8,6 +8,8 @@ tags:
  - Algorithm 
  - Graph
  - MST
+ - Kruskal
+ - Prim
 layout: single
 ---
 # 그래프
@@ -234,81 +236,86 @@ public class Prim {
 		System.out.println(Arrays.toString(p));
 		sc.close();
 	}
-
 }
 ```
 
-### Prim2.java
+### Prim2_PQ.java
 
 ```java
+import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class Prim2 {
-
-	static int N;
-	static int[][] graph; // 가중치 그래프
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		N = sc.nextInt();
-	}
-
-	private static double prim(int start) {
-
-		// MST에 들어가지 않은 녀석들.
-		PriorityQueue<Edge> pq = new PriorityQueue<>();
-		// 모든 정점들을 다 관리.
-		Edge[] dynamicGraph = new Edge[N];
-
-		for (int n = 0; n < N; n++) {
-			dynamicGraph[n] = new Edge(n, Long.MAX_VALUE);
-			if (n == start) {
-				dynamicGraph[n].cost = 0;
-			}
-			pq.add(dynamicGraph[n]);
-		}
-		long cost = 0;
-
-		while (!pq.isEmpty()) {
-			Edge front = pq.poll(); // MST에 포함되는 녀석.
-			cost += front.cost;
-
-			// 자식 탐색.
-			for (int i = 0; i < N; i++) {
-				Edge child = dynamicGraph[i];
-				// pq : 비MST.
-				if (pq.contains(child)) {
-					long tempCost = graph[front.idx][child.idx];
-					if (tempCost < child.cost) {
-						child.cost = tempCost;
-						pq.remove(child);
-						pq.offer(child);
-					}
-				}
-			}
-		}
-
-		return cost;
-	}
-
+public class Prim2_PQ {
 	static class Edge implements Comparable<Edge> {
-		int idx;
-		long cost;
+		int dest;
+		int cost;
 
-		public Edge(int idx, long cost) {
-			super();
-			this.idx = idx;
-			this.cost = cost;
+		Edge(int d, int c) {
+			dest = d;
+			cost = c;
 		}
 
 		@Override
 		public int compareTo(Edge o) {
-			return Long.compare(this.cost, o.cost);
+			return Integer.compare(this.cost, o.cost);
 		}
-
 	}
 
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int V = sc.nextInt();
+		int E = sc.nextInt();
+		// 각 정점별로 인접리스트 참조변수
+		ArrayList<Edge>[] adj = new ArrayList[V];
+		for (int i = 0; i < V; i++) {
+			adj[i] = new ArrayList<>();
+		}
+		// 입력되어지는 간선 배열을 인접리스트에 저장
+		for (int i = 0; i < E; i++) {
+			int a = sc.nextInt() - 1;
+			int b = sc.nextInt() - 1;
+			int c = sc.nextInt();
+			adj[a].add(new Edge(b, c));
+			adj[b].add(new Edge(a, c));
+		}
+		// dist와 pq를 동기화
+		PriorityQueue<Edge> pq = new PriorityQueue<>();
+		Edge[] dist = new Edge[V];
+		// dist안의 각 거리들은 무한대
+		for (int i = 1; i < V; i++) {
+			dist[i] = new Edge(i, Integer.MAX_VALUE);
+			pq.add(dist[i]);
+		}
+		boolean[] mst = new boolean[V + 1];
+		// 시작점은 0
+		dist[0] = new Edge(0, 0);
+		pq.add(dist[0]);
+		int result = 0;
+		while (!pq.isEmpty()) {
+			// 현재 dist가 가장 작은 친구를 데려와서
+			Edge e = pq.poll();
+			if (mst[e.dest]) {
+				continue;
+			}
+			mst[e.dest] = true;
+			result += e.cost;
+			// 그 친구로부터 출발하는 모든 간선에 대해서
+			for (Edge next : adj[e.dest]) {
+				// 그 간선의 목적지가 아직 pq에 들어있는 정점이라면
+				// 그리고 더 빨리 도착할 수 있다면
+				if (!mst[next.dest] && dist[next.dest].cost > next.cost) {
+					// dist갱신
+					dist[next.dest].cost = next.cost;
+					// decrease key연산
+					pq.remove(dist[next.dest]);
+					pq.add(dist[next.dest]);
+				}
+			}
+		}
+		System.out.println(result);
+		// System.out.println(Arrays.toString(p));
+	}
 }
 ```
 
