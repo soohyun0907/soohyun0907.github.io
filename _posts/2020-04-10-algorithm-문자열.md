@@ -1,11 +1,13 @@
 ---
-title: "알고리즘 개념2 - 문자열"
+title: "알고리즘 개념3 - 문자열"
 excerpt: "KMP 알고리즘"
 
 categories:
  - Algorithm
 tags:
  - Algorithm
+ - KMP
+ - String
 layout: single
 ---
 

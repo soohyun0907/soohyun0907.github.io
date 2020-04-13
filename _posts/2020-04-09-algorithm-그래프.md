@@ -1,6 +1,6 @@
 ---
-title: "MST-크루스칼, 프림 알고리즘"
-excerpt: "알고리즘 개념 - MST"
+title: "알고리즘 개념1 - MST"
+excerpt: "크루스칼, 프림 알고리즘"
 
 categories:
  - Algorithm

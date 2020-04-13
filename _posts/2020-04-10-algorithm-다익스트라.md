@@ -1,11 +1,12 @@
 ---
-title: "알고리즘 개념1 - 그래프"
+title: "알고리즘 개념2 - 그래프"
 excerpt: "다익스트라(Dijkstra) 알고리즘"
 
 categories:
  - Algorithm
 tags:
  - Algorithm
+ - Dijkstra
 layout: single
 ---
 
