@@ -1,12 +1,13 @@
 ---
 title: "알고리즘 개념5 - 동적계획법2"
-excerpt: "DP (Dynamic Programming)"
+excerpt: "LIS (최장 증가 수열)"
 
 categories:
  - Algorithm
 tags:
  - Algorithm
  - DP
+ - LIS
 
 layout: single
 ---
