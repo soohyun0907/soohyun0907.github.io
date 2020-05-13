@@ -7,7 +7,7 @@ categories:
 tags:
  - Algorithm
  - KMP
- - String
+ - 문자열
 layout: single
 ---
 
