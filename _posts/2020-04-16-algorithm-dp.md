@@ -1,6 +1,6 @@
 ---
 title: "알고리즘 개념4 - 동적계획법"
-excerpt: "DP (Dynamic Programming)"
+excerpt: "DP, Floyd-Warshall"
 
 categories:
  - Algorithm
