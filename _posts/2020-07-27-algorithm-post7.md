@@ -1,3 +1,15 @@
+---
+title: "알고리즘 개념7 - 시간복잡도"
+excerpt: "시간복잡도"
+
+categories:
+ - Algorithm
+tags:
+ - Algorithm
+ - 시간복잡도
+
+layout: single
+---
 # 시간복잡도
 
 ## 알고리즘 복잡도 계산이 필요한 이유
