@@ -6,5 +6,5 @@ main:
     url: /categories/
   - title: "Year Archive"
     url: /year-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Tags"
+    url: /tags/
