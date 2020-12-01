@@ -17,7 +17,11 @@ classes: wide
 
 2019.11.08 덕성여대 WISET 사업단 - WISET ICT 팀 프로젝트 우수상
 
-2020.08.21 삼성 청년 소프트웨어 아카데미(SSAFY) - 공통 프로젝트 부분 반 3등 수상
+2020.08.21 삼성 청년 소프트웨어 아카데미(SSAFY) - 공통 프로젝트 서울5반 3등 수상
+
+2020.11.27 삼성 청년 소프트웨어 아카데미(SSAFY) - 자율 프로젝트 서울3반 1등 수상
+
+2020.12.01 삼성 청년 소프트웨어 아카데미(SSAFY) - 자율 프로젝트 결선 입상
 
 # 개발 경험
 
@@ -120,6 +124,8 @@ classes: wide
 
 🥇 삼성 청년 소프트웨어(SSAFY) 자율 프로젝트 서울3반 1등 수상
 
+🎖 삼성 청년 소프트웨어(SSAFY) 결선 입상
+
 - 개발 기간 : 20.10.12 ~ 20.11.27
 - Front-end : Vue.js, Bootstrap, Google Map, Vue Apaxcharts, Web-STOMP
 - Back-end : Spring Boot, Spring Security, JWT, JPA, Redis, STOMP
@@ -136,4 +142,4 @@ classes: wide
   - 커뮤니티
     - 사용자의 기록과 활동 지역 분석을 통해 다른 러너를 매칭
     - 일대일 채팅, 지역별 채팅을 통해 다양한 러너들과의 소통 가능
-- [프로젝트 자세히 보기](https://github.com/soohyun0907/RunWithMe_RWM)
+- [프로젝트 자세히 보기](https://github.com/soohyun0907/RunWithMe)
